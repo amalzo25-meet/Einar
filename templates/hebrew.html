@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hebrew University - Home</title>
+  <style>
+
+    body {
+      background-color: #442570;
+      font-family: 'Roboto', sans-serif;
+      color: #003366;
+      padding: 20px;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    h1, h2 {
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .nav-links {
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .nav-links a {
+      color: #FF8EB5;
+      margin: 0 15px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #FF8EB5;
+    }
+
+    .pictures, .testimonials, .values {
+      background-color: #FF8EB5;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .text {
+      color: white;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .gallery .album {
+      transition: transform 0.3s ease;
+    }
+
+    .gallery .album:hover {
+      transform: scale(1.1);
+    }
+
+    .gallery .album img {
+      border-radius: 10px;
+      max-width: 100%;
+      display: block;
+    }
+
+    .val{
+    width: 100px;
+    height: auto;
+    }
+
+    .album-title {
+      text-align: center;
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: white;
+    }
+
+    .logo-img, .name-img {
+      display: block;
+      margin: 20px auto;
+    }
+
+    .logo-img {
+      width: 50%; 
+      max-width: 500px;
+    }
+
+    .name-img {
+      width: 100%; 
+      max-width: 500px;
+      border-radius: 10px;
+    }
+
+    .overlay, .overlay2 {
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .overlay {
+      top: 26%; 
+      left: 19%; 
+      width: 500px; 
+    }
+
+    .overlay2 {
+      top: 23%; 
+      left: 53%; 
+      width: 500px; 
+    }
+    .head {
+      font-size: 50px;
+      color: #FFDD77;
+    }
+    .intro{
+      font-size: 30px;
+      color: #FFDD77;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-links">
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('about') }}">About Us</a>
+    <a href="{{ url_for('login') }}">Logout</a>
+    <a href="{{ url_for('contact_page') }}">Contact</a>
+  </div>
+   <h1 class= "head">اكتشف مكانك في اينار</h1>
+  <div class="content">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK0EjzRDvGvNaO_dEddMEFAcFWJ8AxBUkKXg&s" alt="Wave to Earth" class="logo-img">
+    <div class= "values">
+    <p class = "intro"> إينار" هو أول مركز للشباب العربي في القدس، مخصص لدعم المقدسيين العرب الفلسطينيين. نحن نقدم برامج في المجال الأكاديمي والتطوير الوظيفي، لتعزيز الفرص التعليمية والمهنية. هدفنا هو تمكين الشباب من خلال توفير الموارد والتوجيه لتحقيق النجاح الأكاديمي والتقدم الوظيفي. </p>
+  </div>
+    <div class="pictures">
+      <h1 class="text">معرضنا</h1>
+      <div class="gallery">
+        <div class="album">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF5PtTPcWAttRZT3N7f1uLvqOiMWXUZOQ8xA&s" alt="First activity of the year" class="album-cover">
+          <p class="album-title">First activity of the year</p>
+        </div>
+        <div class="album">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ45kuOo38s7iFApGbGJg-l6Whl6_-0LhYtCA&s" alt="Krembo Seminar" class="album-cover">
+          <p class="album-title">cooking activity</p>
+        </div>
+        <div class="album">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGh4CWzs6JfymO5AFVxTvXEVGg3J11iHdDAIDznP3b8l6ufSqYAi3ZaHoalOSRYvyt9_4&usqp=CAU" alt="Valentines Day Activity" class="album-cover">
+          <p class="album-title"> Activity</p>
+        </div>
+        <div class="album">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfLEErUDKCmx4n4jWiShwjSIBw6U2H5ejt40xfJlqAYEfoAIbtdKH8RXkw1wwtUAIF7tw&usqp=CAU" alt="Masa Aviv" class="album-cover">
+          <p class="album-title">Masa Aviv</p>
+        </div>
+      </div>
+    </div>
+  <p class = "intro"> انضم إلينا اليوم! </p>
+  <button class= "intro"> انقر هنا للانضمام إلينا اليوم! </button>
+</body>
+</html>
